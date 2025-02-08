@@ -137,4 +137,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 300);
         }, 2000);
     }
+
+    // Добавляем обработчик для кнопки Copy CA
+    const copyCAButton = document.querySelector('.copy-ca-button');
+    const contractAddress = 'Soon'; // Пример адреса
+
+    copyCAButton.addEventListener('click', function() {
+        navigator.clipboard.writeText(contractAddress).then(() => {
+            this.classList.add('copied');
+            setTimeout(() => {
+                this.classList.remove('copied');
+            }, 2000);
+        });
+    });
 }); 
