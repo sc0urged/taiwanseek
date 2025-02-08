@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Добавляем обработчик для кнопки Copy CA
     const copyCAButton = document.querySelector('.copy-ca-button');
-    const contractAddress = 'Soon'; // Пример адреса
+    const contractAddress = '5b7hac5rcdVdEt2LZQnRN8tXQorFiq7AE1zdkcmHpump'; // Пример адреса
 
     copyCAButton.addEventListener('click', function() {
         navigator.clipboard.writeText(contractAddress).then(() => {
