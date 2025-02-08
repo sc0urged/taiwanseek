@@ -125,9 +125,9 @@ body {
 }
 
 .model-select.active {
-    background-color: #2D7CFF;
+    background-color: #2A3086;
     color: white;
-    border-color: #2D7CFF;
+    border-color: #2A3086;
 }
 
 .model-select.active .icon {
